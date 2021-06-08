@@ -1,0 +1,6 @@
+asyncpg
+aiogram
+apscheduler
+loguru
+gitpython
+tabulate
