@@ -4,7 +4,7 @@ from enum import Enum
 
 START_TIME = datetime.datetime.now()
 
-api_client_url = "http://185.87.48.116/api/"
+api_client_url = "http://167.86.74.97/api/"
 
 provider_key = "123123123123"
 
