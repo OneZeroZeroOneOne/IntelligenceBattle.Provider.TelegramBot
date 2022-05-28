@@ -4,7 +4,7 @@ from enum import Enum
 
 START_TIME = datetime.datetime.now()
 
-api_client_url = "http://167.86.74.97/api/"
+api_client_url = "http://185.169.252.189/api/"
 
 provider_key = "123123123123"
 
@@ -15,24 +15,24 @@ TOKEN = os.environ.get('TOKEN')
 
 
 texts = {
-    'ru': {
-        'hello': "Здравствуйте, это бот-интеллектуальный баттл, что бы начать нажмите кнопку внизу",
-        "select_game_type": "Выберите тип игры:",
-        "game_type_info_template": "{title}, кол-во игроков: {count}",
-        "start_game_button": "Начать игру",
+    'ua': {
+        'hello': "Привіт, це бот-інтелектуальний баттл, щоб почати натисніть кнопку внизу",
+        "select_game_type": "Виберіть тип гри:",
+        "game_type_info_template": "{title}, кількість гравців: {count}",
+        "start_game_button": "Розпочати гру",
         "category_info_template": "{title}",
-        "select_category": "Выберите категорию",
-        "game_started": "игра начата ",
-        "error_search": "ошибка поиска",
-        "cancel_search": "Отменить",
-        "canceled_search": "поиск отменен",
-        "question_not_current": "вопрос не является текущим",
+        "select_category": "Виберіть категорію",
+        "game_started": "гра розпочата",
+        "error_search": "помилка пошуку",
+        "cancel_search": "Відмінити",
+        "canceled_search": "пошук відмінений",
+        "question_not_current": "питання не є поточним",
         "right": "Правильно",
-        "wrong": "Не правильно",
-        "game_already_searches": "на даный момент вы уже исчете игру",
+        "wrong": "Неправильно",
+        "game_already_searches": "на даний момент ви вже шукаєте гру",
         "game_result" : "Результат:",
-        "please_start_new_game": "Начните новую игру уже сейчас!",
-        "choose_lang": "Выберите свой язык",
+        "please_start_new_game": "Почніть нову гру вже зараз!",
+        "choose_lang": "Виберіть свою мову",
     },
     'en': {
         'hello': "Hello",
