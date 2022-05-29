@@ -20,7 +20,11 @@ class UserProviderMiddleware(LifetimeControllerMiddleware):
     async def pre_process(self, message: Union[types.Message, types.CallbackQuery], data: dict,):
         data['user'] = await data['client'].get_user()
         if not data['user']:
-            await data['client'].register_user(message.from_user.username)
+            if(message.from_user.username):
+                username = message.from_user.username
+            else:
+                username = message.from_user.first_name
+            await data['client'].register_user(username)
             data['user'] = await data['client'].get_user()
 
 
