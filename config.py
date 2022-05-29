@@ -10,8 +10,6 @@ provider_key = "123123123123"
 
 bot_token = "1763731047:AAEcHDkN3gyNeUD4zY_7P2pWGpurxbJhiFo"
 
-TOKEN = os.environ.get('TOKEN')
-
 
 
 texts = {
