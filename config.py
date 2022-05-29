@@ -54,7 +54,7 @@ texts = {
 }
 
 class Lang(Enum):
-    ru = 2
+    ua = 2
     en = 1
 
 DEFAULT_LANG = Lang.en
