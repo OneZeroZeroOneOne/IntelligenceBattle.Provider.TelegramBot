@@ -31,6 +31,7 @@ texts = {
         "game_result" : "Результат:",
         "please_start_new_game": "Почніть нову гру вже зараз!",
         "choose_lang": "Виберіть свою мову",
+        "you_win": "Ви перемогли, ваш рейтинг підвищено з {} до {}"
     },
     'en': {
         'hello': "Hello",
@@ -48,8 +49,10 @@ texts = {
         "wrong": "wrong",
         "game_already_searches": "game already searches",
         "game_result" : "game_result",
-        "please_start_new_game": "please_start_new_game",
+        "please_start_new_game": "please start new game",
         "choose_lang": "Choose you language",
+        "you_win": "You won, your rating increased from {} to {}",
+        
     }
 }
 

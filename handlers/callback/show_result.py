@@ -13,7 +13,6 @@ async def show_result(query: types.CallbackQuery, user:User, callback_data: dict
     game_result : BaseResponseModel[typing.List[GameResultElement]] = await client.get_game_result(game_id)
     text = _["game_result"] + "\n"
     scores = {}
-    winner = ""
     if game_result.model:
         for result in game_result.model:
             score = scores.get(result.user.name, None)
@@ -27,7 +26,7 @@ async def show_result(query: types.CallbackQuery, user:User, callback_data: dict
                     scores[result.user.name] = 0
         for key, score in scores.items():
             text += key + ": " + str(score) + "\n"
-        text += "Вы победили.\nВаш рейтинг повышен с 1920(+94) до 2016.\n"
+        text += _["you_win"].format("560(+44)" ,"604")
         text += _["please_start_new_game"]
         await query.message.answer(text, reply_markup=start_keyb(_["start_game_button"]))
             
